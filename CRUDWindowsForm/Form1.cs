@@ -91,6 +91,8 @@ namespace CRUDWindowsForm
                             "Sukses",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
+
+                            LoadData();
                         }
                     }
                 }
