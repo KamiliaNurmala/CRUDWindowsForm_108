@@ -188,6 +188,7 @@ namespace CRUDWindowsForm
             {
                 DataGridViewRow row = dgvMahasiswa.Rows[e.RowIndex];
                 txtNIM.Text = row.Cells[0].Value.ToString();
+                txtNama.Text = row.Cells[1].Value?.ToString();
             }
 
         }
