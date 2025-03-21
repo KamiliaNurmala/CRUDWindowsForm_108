@@ -63,7 +63,13 @@ namespace CRUDWindowsForm
             { 
                 try 
                 {
-                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "") { }
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "") 
+                    {
+                        MessageBox.Show("Harap isi semua data!",
+                        "Peringatan",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    }
                 }
             }
         }
