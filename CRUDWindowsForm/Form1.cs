@@ -175,7 +175,11 @@ namespace CRUDWindowsForm
             }
         }
 
-        private void BtnUbah(object sender, EventArgs e) { }
+        private void BtnUbah(object sender, EventArgs e) 
+        {
+            if (txtNIM.Text == "") { }
+
+        }
 
         private void BtnRefresh(object sender, EventArgs e) 
         {
