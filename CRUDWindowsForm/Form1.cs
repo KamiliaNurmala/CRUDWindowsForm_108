@@ -175,6 +175,8 @@ namespace CRUDWindowsForm
             }
         }
 
+        private void BtnUbah(object sender, EventArgs e) { }
+
         private void BtnRefresh(object sender, EventArgs e) 
         {
             LoadData();
@@ -198,29 +200,29 @@ namespace CRUDWindowsForm
 
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.NIM = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // NIM
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NIM";
+            this.NIM.AutoSize = true;
+            this.NIM.Location = new System.Drawing.Point(66, 85);
+            this.NIM.Name = "NIM";
+            this.NIM.Size = new System.Drawing.Size(57, 30);
+            this.NIM.TabIndex = 0;
+            this.NIM.Text = "NIM";
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NIM);
             this.Name = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        private Label label1;
+        private Label NIM;
     }
 
 }
