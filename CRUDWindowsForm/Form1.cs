@@ -45,6 +45,7 @@ namespace CRUDWindowsForm
 
                     dgvMahasiswa.AutoGenerateColumns = true;
                     dgvMahasiswa.DataSource = dt;
+                    ClearForm();
                 }
             }
         }
