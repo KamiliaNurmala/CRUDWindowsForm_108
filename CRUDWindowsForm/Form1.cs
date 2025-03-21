@@ -264,6 +264,12 @@ namespace CRUDWindowsForm
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtTelepon = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Hapus = new System.Windows.Forms.Button();
+            this.Ubah = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dgvMahasiswa = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).BeginInit();
             this.SuspendLayout();
             // 
             // NIM
@@ -313,42 +319,105 @@ namespace CRUDWindowsForm
             // 
             // txtNIM
             // 
-            this.txtNIM.Location = new System.Drawing.Point(225, 45);
+            this.txtNIM.Location = new System.Drawing.Point(225, 39);
             this.txtNIM.Name = "txtNIM";
-            this.txtNIM.Size = new System.Drawing.Size(300, 39);
+            this.txtNIM.Size = new System.Drawing.Size(300, 26);
             this.txtNIM.TabIndex = 5;
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(225, 90);
+            this.txtNama.Location = new System.Drawing.Point(225, 84);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(300, 39);
+            this.txtNama.Size = new System.Drawing.Size(300, 26);
             this.txtNama.TabIndex = 6;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 135);
+            this.textBox1.Location = new System.Drawing.Point(225, 132);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 39);
+            this.textBox1.Size = new System.Drawing.Size(300, 26);
             this.textBox1.TabIndex = 7;
             // 
             // txtTelepon
             // 
-            this.txtTelepon.Location = new System.Drawing.Point(225, 180);
+            this.txtTelepon.Location = new System.Drawing.Point(225, 174);
             this.txtTelepon.Name = "txtTelepon";
-            this.txtTelepon.Size = new System.Drawing.Size(300, 39);
+            this.txtTelepon.Size = new System.Drawing.Size(300, 26);
             this.txtTelepon.TabIndex = 8;
             // 
             // txtAlamat
             // 
-            this.txtAlamat.Location = new System.Drawing.Point(225, 225);
+            this.txtAlamat.Location = new System.Drawing.Point(225, 222);
+            this.txtAlamat.MaxLength = 50;
             this.txtAlamat.Name = "txtAlamat";
-            this.txtAlamat.Size = new System.Drawing.Size(300, 39);
+            this.txtAlamat.Size = new System.Drawing.Size(300, 26);
             this.txtAlamat.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(600, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 45);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Tambah";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.BtnTambah);
+            // 
+            // Hapus
+            // 
+            this.Hapus.Location = new System.Drawing.Point(600, 105);
+            this.Hapus.Name = "Hapus";
+            this.Hapus.Size = new System.Drawing.Size(135, 45);
+            this.Hapus.TabIndex = 11;
+            this.Hapus.Text = "Hapus";
+            this.Hapus.UseVisualStyleBackColor = true;
+            this.Hapus.Click += new System.EventHandler(this.BtnHapus);
+            // 
+            // Ubah
+            // 
+            this.Ubah.Location = new System.Drawing.Point(600, 165);
+            this.Ubah.Name = "Ubah";
+            this.Ubah.Size = new System.Drawing.Size(135, 45);
+            this.Ubah.TabIndex = 12;
+            this.Ubah.Text = "Ubah";
+            this.Ubah.UseVisualStyleBackColor = true;
+            this.Ubah.Click += new System.EventHandler(this.BtnUbah);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(600, 225);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(135, 45);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Refresh";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.BtnRefresh);
+            // 
+            // dgvMahasiswa
+            // 
+            this.dgvMahasiswa.AllowUserToAddRows = false;
+            this.dgvMahasiswa.AllowUserToDeleteRows = false;
+            this.dgvMahasiswa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMahasiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMahasiswa.Location = new System.Drawing.Point(75, 345);
+            this.dgvMahasiswa.Name = "dgvMahasiswa";
+            this.dgvMahasiswa.ReadOnly = true;
+            this.dgvMahasiswa.RowHeadersWidth = 62;
+            this.dgvMahasiswa.RowTemplate.Height = 28;
+            this.dgvMahasiswa.Size = new System.Drawing.Size(750, 300);
+            this.dgvMahasiswa.TabIndex = 14;
+            this.dgvMahasiswa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMahasiswa_CellClick);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
+            this.Controls.Add(this.dgvMahasiswa);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Ubah);
+            this.Controls.Add(this.Hapus);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.txtTelepon);
             this.Controls.Add(this.textBox1);
@@ -360,6 +429,7 @@ namespace CRUDWindowsForm
             this.Controls.Add(this.Nama);
             this.Controls.Add(this.NIM);
             this.Name = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,6 +445,11 @@ namespace CRUDWindowsForm
         private TextBox textBox1;
         private TextBox txtTelepon;
         private TextBox txtAlamat;
+        private Button button1;
+        private Button Hapus;
+        private Button Ubah;
+        private Button button4;
+        private DataGridView dgvMahasiswa;
     }
 
 }
