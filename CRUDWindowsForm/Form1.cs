@@ -137,7 +137,14 @@ namespace CRUDWindowsForm
                             {
                                 cmd.Parameters.AddWithValue("@NIM", nim);
                                 int rowAffected = cmd.ExecuteNonQuery();
-                                if (rowAffected > 0) { }
+                                if (rowAffected > 0) 
+                                {
+                                    MessageBox.Show("Data berhasil dihapus!",
+                                    "Sukses",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+
+                                }
                             }
                         }
                     }
