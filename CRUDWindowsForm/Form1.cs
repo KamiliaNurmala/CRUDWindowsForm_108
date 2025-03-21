@@ -188,7 +188,10 @@ namespace CRUDWindowsForm
             }
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                try { }
+                try 
+                {
+                    conn.Open();
+                }
             }
 
         }
