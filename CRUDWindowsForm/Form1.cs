@@ -210,6 +210,7 @@ namespace CRUDWindowsForm
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
 
+                            LoadData();
                         }
                     }
                 }
