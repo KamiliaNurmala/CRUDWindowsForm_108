@@ -137,6 +137,7 @@ namespace CRUDWindowsForm
                             {
                                 cmd.Parameters.AddWithValue("@NIM", nim);
                                 int rowAffected = cmd.ExecuteNonQuery();
+                                if (rowAffected > 0) { }
                             }
                         }
                     }
