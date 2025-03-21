@@ -18,6 +18,8 @@ namespace CRUDWindowsForm
         {
             LoadData();
         }
+
+        private void ClearForm() { }
     }
 
 }
