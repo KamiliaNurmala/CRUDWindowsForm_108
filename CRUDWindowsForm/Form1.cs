@@ -3,4 +3,8 @@ using System;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace CRUDWindowsForm { }
+namespace CRUDWindowsForm 
+{
+    public partial class Form1 : Form { }
+
+}
