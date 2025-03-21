@@ -255,20 +255,64 @@ namespace CRUDWindowsForm
         private void InitializeComponent()
         {
             this.NIM = new System.Windows.Forms.Label();
+            this.Nama = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
+            this.Telepon = new System.Windows.Forms.Label();
+            this.Alamat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NIM
             // 
             this.NIM.AutoSize = true;
-            this.NIM.Location = new System.Drawing.Point(66, 85);
+            this.NIM.Location = new System.Drawing.Point(75, 45);
             this.NIM.Name = "NIM";
-            this.NIM.Size = new System.Drawing.Size(57, 30);
+            this.NIM.Size = new System.Drawing.Size(38, 20);
             this.NIM.TabIndex = 0;
             this.NIM.Text = "NIM";
+            // 
+            // Nama
+            // 
+            this.Nama.AutoSize = true;
+            this.Nama.Location = new System.Drawing.Point(75, 90);
+            this.Nama.Name = "Nama";
+            this.Nama.Size = new System.Drawing.Size(51, 20);
+            this.Nama.TabIndex = 1;
+            this.Nama.Text = "Nama";
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(75, 135);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(72, 30);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "Email";
+            // 
+            // Telepon
+            // 
+            this.Telepon.AutoSize = true;
+            this.Telepon.Location = new System.Drawing.Point(75, 180);
+            this.Telepon.Name = "Telepon";
+            this.Telepon.Size = new System.Drawing.Size(99, 30);
+            this.Telepon.TabIndex = 3;
+            this.Telepon.Text = "Telepon";
+            // 
+            // Alamat
+            // 
+            this.Alamat.AutoSize = true;
+            this.Alamat.Location = new System.Drawing.Point(75, 225);
+            this.Alamat.Name = "Alamat";
+            this.Alamat.Size = new System.Drawing.Size(89, 30);
+            this.Alamat.TabIndex = 4;
+            this.Alamat.Text = "Alamat";
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
+            this.Controls.Add(this.Alamat);
+            this.Controls.Add(this.Telepon);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.Nama);
             this.Controls.Add(this.NIM);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -277,6 +321,10 @@ namespace CRUDWindowsForm
         }
 
         private Label NIM;
+        private Label Nama;
+        private Label Email;
+        private Label Telepon;
+        private Label Alamat;
     }
 
 }
