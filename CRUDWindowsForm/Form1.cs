@@ -186,7 +186,10 @@ namespace CRUDWindowsForm
 
                 return;
             }
-            using (SqlConnection conn = new SqlConnection(connectionString)) { }
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try { }
+            }
 
         }
 
