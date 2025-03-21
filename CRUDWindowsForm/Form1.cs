@@ -185,8 +185,8 @@ namespace CRUDWindowsForm
                 MessageBoxIcon.Warning);
 
                 return;
-
             }
+            using (SqlConnection conn = new SqlConnection(connectionString)) { }
 
         }
 
