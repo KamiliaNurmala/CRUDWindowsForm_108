@@ -123,7 +123,10 @@ namespace CRUDWindowsForm
                                        MessageBoxButtons.YesNo,
                                        MessageBoxIcon.Question);
 
-                if (confirm == DialogResult.Yes) { }
+                if (confirm == DialogResult.Yes) 
+                {
+                    using (SqlConnection conn = new SqlConnection(connectionString)) {  }
+                }
             }
         }
     }
