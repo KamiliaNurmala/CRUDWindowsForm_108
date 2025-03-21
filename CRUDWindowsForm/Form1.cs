@@ -198,15 +198,29 @@ namespace CRUDWindowsForm
 
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(66, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "NIM";
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
+
+        private Label label1;
     }
 
 }
