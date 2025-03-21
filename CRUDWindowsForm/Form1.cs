@@ -29,6 +29,8 @@ namespace CRUDWindowsForm
 
             txtNIM.Focus();
         }
+
+        private void LoadData() { }
     }
 
 }
