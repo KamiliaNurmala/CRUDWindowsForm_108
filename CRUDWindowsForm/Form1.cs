@@ -95,6 +95,7 @@ namespace CRUDWindowsForm
                             LoadData();
                             ClearForm();
                         }
+                        else { }
                     }
                 }
             }
