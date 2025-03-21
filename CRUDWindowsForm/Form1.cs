@@ -19,7 +19,10 @@ namespace CRUDWindowsForm
             LoadData();
         }
 
-        private void ClearForm() { }
+        private void ClearForm() 
+        {
+            txtNIM.Clear();
+        }
     }
 
 }
