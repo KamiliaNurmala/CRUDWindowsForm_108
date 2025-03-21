@@ -202,6 +202,8 @@ namespace CRUDWindowsForm
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
 
                         int rowAffected = cmd.ExecuteNonQuery();
+
+                        if (rowAffected > 0) { }
                     }
                 }
             }
