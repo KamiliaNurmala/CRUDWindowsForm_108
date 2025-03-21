@@ -25,6 +25,7 @@ namespace CRUDWindowsForm
             txtNama.Clear();
             txtEmail.Clear();
             txtTelepon.Clear();
+            txtAlamat.Clear();
         }
     }
 
