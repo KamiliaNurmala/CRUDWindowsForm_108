@@ -177,7 +177,14 @@ namespace CRUDWindowsForm
 
         private void BtnUbah(object sender, EventArgs e) 
         {
-            if (txtNIM.Text == "") { }
+            if (txtNIM.Text == "") 
+            {
+                MessageBox.Show("Pilih data yang akan diubah!",
+                "Peringatan",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+
+            }
 
         }
 
