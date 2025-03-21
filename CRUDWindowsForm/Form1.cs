@@ -445,10 +445,10 @@ namespace CRUDWindowsForm
         private TextBox textBox1;
         private TextBox txtTelepon;
         private TextBox txtAlamat;
-        private Button button1;
+        private Button Tambah;
         private Button Hapus;
         private Button Ubah;
-        private Button button4;
+        private Button Refresh;
         private DataGridView dgvMahasiswa;
     }
 
