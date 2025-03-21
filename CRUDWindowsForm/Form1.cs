@@ -222,9 +222,11 @@ namespace CRUDWindowsForm
                         }
                     }
                 }
+                catch (Exception ex) { }
+
             }
 
-        }
+            }
 
         private void BtnRefresh(object sender, EventArgs e) 
         {
