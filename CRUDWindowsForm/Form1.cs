@@ -145,6 +145,7 @@ namespace CRUDWindowsForm
                                     MessageBoxIcon.Information);
 
                                     LoadData();
+                                    ClearForm();
                                 }
                             }
                         }
