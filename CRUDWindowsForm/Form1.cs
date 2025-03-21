@@ -56,6 +56,8 @@ namespace CRUDWindowsForm
                 }
             }
         }
+
+        private void BtnTambah(object sender, EventArgs e) { }
     }
 
 }
