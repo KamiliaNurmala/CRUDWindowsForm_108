@@ -23,7 +23,7 @@ namespace CRUDWindowsForm
         {
             txtNIM.Clear();
             txtNama.Clear();
-            txtEmail.Clear();
+            textBox1.Clear();
             txtTelepon.Clear();
             txtAlamat.Clear();
 
@@ -63,7 +63,7 @@ namespace CRUDWindowsForm
             { 
                 try 
                 {
-                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "") 
+                    if (txtNIM.Text == "" || txtNama.Text == "" || textBox1.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "") 
                     {
                         MessageBox.Show("Harap isi semua data!",
                         "Peringatan",
@@ -81,7 +81,7 @@ namespace CRUDWindowsForm
                     {
                         cmd.Parameters.AddWithValue("@NIM", txtNIM.Text);
                         cmd.Parameters.AddWithValue("@Nama", txtNama.Text);
-                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@Email", textBox1.Text);
                         cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text);
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
 
@@ -197,7 +197,7 @@ namespace CRUDWindowsForm
                     {
                         cmd.Parameters.AddWithValue("@NIM", txtNIM.Text);
                         cmd.Parameters.AddWithValue("@Nama", txtNama.Text);
-                        cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@Email", textBox1.Text);
                         cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text);
                         cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text);
 
@@ -245,7 +245,7 @@ namespace CRUDWindowsForm
                 DataGridViewRow row = dgvMahasiswa.Rows[e.RowIndex];
                 txtNIM.Text = row.Cells[0].Value.ToString();
                 txtNama.Text = row.Cells[1].Value?.ToString();
-                txtEmail.Text = row.Cells[2].Value?.ToString();
+                textBox1.Text = row.Cells[2].Value?.ToString();
                 txtTelepon.Text = row.Cells[3].Value?.ToString();
                 txtAlamat.Text = row.Cells[4].Value?.ToString();
             }
@@ -259,6 +259,11 @@ namespace CRUDWindowsForm
             this.Email = new System.Windows.Forms.Label();
             this.Telepon = new System.Windows.Forms.Label();
             this.Alamat = new System.Windows.Forms.Label();
+            this.txtNIM = new System.Windows.Forms.TextBox();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelepon = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NIM
@@ -306,9 +311,49 @@ namespace CRUDWindowsForm
             this.Alamat.TabIndex = 4;
             this.Alamat.Text = "Alamat";
             // 
+            // txtNIM
+            // 
+            this.txtNIM.Location = new System.Drawing.Point(225, 45);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(300, 39);
+            this.txtNIM.TabIndex = 5;
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(225, 90);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(300, 39);
+            this.txtNama.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(225, 135);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(300, 39);
+            this.textBox1.TabIndex = 7;
+            // 
+            // txtTelepon
+            // 
+            this.txtTelepon.Location = new System.Drawing.Point(225, 180);
+            this.txtTelepon.Name = "txtTelepon";
+            this.txtTelepon.Size = new System.Drawing.Size(300, 39);
+            this.txtTelepon.TabIndex = 8;
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(225, 225);
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(300, 39);
+            this.txtAlamat.TabIndex = 9;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
+            this.Controls.Add(this.txtAlamat);
+            this.Controls.Add(this.txtTelepon);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNama);
+            this.Controls.Add(this.txtNIM);
             this.Controls.Add(this.Alamat);
             this.Controls.Add(this.Telepon);
             this.Controls.Add(this.Email);
@@ -325,6 +370,11 @@ namespace CRUDWindowsForm
         private Label Email;
         private Label Telepon;
         private Label Alamat;
+        private TextBox txtNIM;
+        private TextBox txtNama;
+        private TextBox textBox1;
+        private TextBox txtTelepon;
+        private TextBox txtAlamat;
     }
 
 }
