@@ -47,6 +47,7 @@ namespace CRUDWindowsForm
                     dgvMahasiswa.DataSource = dt;
                     ClearForm();
                 }
+                catch (Exception ex) {}
             }
         }
     }
