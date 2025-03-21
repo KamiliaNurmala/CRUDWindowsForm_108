@@ -264,10 +264,10 @@ namespace CRUDWindowsForm
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtTelepon = new System.Windows.Forms.TextBox();
             this.txtAlamat = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Tambah = new System.Windows.Forms.Button();
             this.Hapus = new System.Windows.Forms.Button();
             this.Ubah = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Refresh = new System.Windows.Forms.Button();
             this.dgvMahasiswa = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMahasiswa)).BeginInit();
             this.SuspendLayout();
@@ -355,13 +355,13 @@ namespace CRUDWindowsForm
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(600, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 45);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Tambah";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.BtnTambah);
+            this.Tambah.Location = new System.Drawing.Point(600, 45);
+            this.Tambah.Name = "Tambah";
+            this.Tambah.Size = new System.Drawing.Size(135, 45);
+            this.Tambah.TabIndex = 10;
+            this.Tambah.Text = "Tambah";
+            this.Tambah.UseVisualStyleBackColor = true;
+            this.Tambah.Click += new System.EventHandler(this.BtnTambah);
             // 
             // Hapus
             // 
@@ -385,13 +385,13 @@ namespace CRUDWindowsForm
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(600, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 45);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Refresh";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.BtnRefresh);
+            this.Refresh.Location = new System.Drawing.Point(600, 225);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(135, 45);
+            this.Refresh.TabIndex = 13;
+            this.Refresh.Text = "Refresh";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.BtnRefresh);
             // 
             // dgvMahasiswa
             // 
@@ -414,10 +414,10 @@ namespace CRUDWindowsForm
             // 
             this.ClientSize = new System.Drawing.Size(908, 694);
             this.Controls.Add(this.dgvMahasiswa);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Tambah);
             this.Controls.Add(this.Ubah);
             this.Controls.Add(this.Hapus);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Refresh);
             this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.txtTelepon);
             this.Controls.Add(this.textBox1);
