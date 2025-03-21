@@ -9,7 +9,10 @@ namespace CRUDWindowsForm
 
         string connectionString = "Data Source=KAMILIA\\KAMILIANURMALA;;Initial Catalog=DbProgramSiswa;Integrated Security=True;";
 
-        public Form1() { }
+        public Form1() 
+        {
+            InitializeComponent();
+        }
 
     }
 
