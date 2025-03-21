@@ -114,7 +114,10 @@ namespace CRUDWindowsForm
             }
         }
 
-        private void BtnHapus(object sender, EventArgs e) { }
+        private void BtnHapus(object sender, EventArgs e) 
+        {
+            if (dgvMahasiswa.SelectedRows.Count > 0) {  }
+        }
     }
 
 }
