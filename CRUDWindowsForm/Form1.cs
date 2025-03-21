@@ -175,7 +175,9 @@ namespace CRUDWindowsForm
             }
         }
 
-        private void BtnRefresh(object sender, EventArgs e)
+        private void BtnRefresh(object sender, EventArgs e) 
+        { 
+        }
     }
 
 }
