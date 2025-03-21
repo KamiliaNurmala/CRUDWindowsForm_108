@@ -113,6 +113,8 @@ namespace CRUDWindowsForm
                 }
             }
         }
+
+        private void BtnHapus(object sender, EventArgs e) { }
     }
 
 }
