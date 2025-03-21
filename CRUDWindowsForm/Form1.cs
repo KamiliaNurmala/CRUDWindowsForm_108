@@ -80,6 +80,7 @@ namespace CRUDWindowsForm
                     using (SqlCommand cmd = new SqlCommand(query, conn)) 
                     {
                         cmd.Parameters.AddWithValue("@NIM", txtNIM.Text);
+                        cmd.Parameters.AddWithValue("@Nama", txtNama.Text);
                     }
                 }
             }
