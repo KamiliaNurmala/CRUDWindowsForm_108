@@ -61,7 +61,10 @@ namespace CRUDWindowsForm
         {
             using (SqlConnection conn = new SqlConnection(connectionString)) 
             { 
-                try { }
+                try 
+                {
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "" || txtAlamat.Text == "") { }
+                }
             }
         }
     }
