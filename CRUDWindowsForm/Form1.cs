@@ -26,6 +26,8 @@ namespace CRUDWindowsForm
             txtEmail.Clear();
             txtTelepon.Clear();
             txtAlamat.Clear();
+
+            txtNIM.Focus();
         }
     }
 
