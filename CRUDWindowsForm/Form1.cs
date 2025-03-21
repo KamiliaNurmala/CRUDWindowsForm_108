@@ -30,7 +30,10 @@ namespace CRUDWindowsForm
             txtNIM.Focus();
         }
 
-        private void LoadData() { }
+        private void LoadData() 
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString)) { }
+        }
     }
 
 }
