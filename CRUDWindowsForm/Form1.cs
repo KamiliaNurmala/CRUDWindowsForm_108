@@ -181,6 +181,8 @@ namespace CRUDWindowsForm
             MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\n Jumlah Baris: {dgvMahasiswa.RowCount}",
             "Debugging DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void dgvMahasiswa_CellClick(object sender, DataGridViewCellEventArgs e)
     }
 
 }
