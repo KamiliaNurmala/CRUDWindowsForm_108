@@ -174,6 +174,8 @@ namespace CRUDWindowsForm
                 MessageBoxIcon.Warning);
             }
         }
+
+        private void BtnRefresh(object sender, EventArgs e)
     }
 
 }
