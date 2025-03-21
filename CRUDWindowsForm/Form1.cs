@@ -156,6 +156,7 @@ namespace CRUDWindowsForm
                                 }
                             }
                         }
+                        catch (Exception ex) { }
                     }
                 }
             }
