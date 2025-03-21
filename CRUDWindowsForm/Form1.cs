@@ -57,7 +57,10 @@ namespace CRUDWindowsForm
             }
         }
 
-        private void BtnTambah(object sender, EventArgs e) { }
+        private void BtnTambah(object sender, EventArgs e) 
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString)) { }
+        }
     }
 
 }
