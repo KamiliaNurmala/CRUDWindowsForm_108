@@ -116,7 +116,15 @@ namespace CRUDWindowsForm
 
         private void BtnHapus(object sender, EventArgs e) 
         {
-            if (dgvMahasiswa.SelectedRows.Count > 0) {  }
+            if (dgvMahasiswa.SelectedRows.Count > 0) 
+            {
+                DialogResult confirm = MessageBox.Show("Apakah Anda yakin ingin menghapus data ini?",
+                                       "Konfirmasi",
+                                       MessageBoxButtons.YesNo,
+                                       MessageBoxIcon.Question);
+
+                if (confirm == DialogResult.Yes) { }
+            }
         }
     }
 
