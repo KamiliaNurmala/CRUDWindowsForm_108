@@ -95,7 +95,13 @@ namespace CRUDWindowsForm
                             LoadData();
                             ClearForm();
                         }
-                        else { }
+                        else 
+                        {
+                            MessageBox.Show("Data gagal ditambahkan!",
+                            "Kesalahan",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
