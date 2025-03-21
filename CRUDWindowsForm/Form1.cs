@@ -136,6 +136,7 @@ namespace CRUDWindowsForm
                             using (SqlCommand cmd = new SqlCommand(query, conn)) 
                             {
                                 cmd.Parameters.AddWithValue("@NIM", nim);
+                                int rowAffected = cmd.ExecuteNonQuery();
                             }
                         }
                     }
