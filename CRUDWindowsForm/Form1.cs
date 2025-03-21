@@ -184,6 +184,8 @@ namespace CRUDWindowsForm
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Warning);
 
+                return;
+
             }
 
         }
