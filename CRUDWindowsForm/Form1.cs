@@ -42,6 +42,8 @@ namespace CRUDWindowsForm
                     SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
+
+                    dgvMahasiswa.AutoGenerateColumns = true;
                 }
             }
         }
