@@ -5,6 +5,10 @@ using System.Data;
 
 namespace CRUDWindowsForm 
 {
-    public partial class Form1 : Form { }
+    public partial class Form1 : Form {
+
+        string connectionString = "Data Source=KAMILIA\\KAMILIANURMALA;;Initial Catalog=DbProgramSiswa;Integrated Security=True;";
+
+    }
 
 }
