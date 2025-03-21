@@ -72,6 +72,8 @@ namespace CRUDWindowsForm
 
                         return;
                     }
+
+                    conn.Open();
                 }
             }
         }
