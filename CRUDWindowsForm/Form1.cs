@@ -69,6 +69,8 @@ namespace CRUDWindowsForm
                         "Peringatan",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
+
+                        return;
                     }
                 }
             }
