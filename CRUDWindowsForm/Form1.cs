@@ -32,7 +32,10 @@ namespace CRUDWindowsForm
 
         private void LoadData() 
         {
-            using (SqlConnection conn = new SqlConnection(connectionString)) { }
+            using (SqlConnection conn = new SqlConnection(connectionString)) 
+            { 
+                try { }
+            }
         }
     }
 
