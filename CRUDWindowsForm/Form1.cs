@@ -213,7 +213,13 @@ namespace CRUDWindowsForm
                             LoadData();
                             ClearForm();
                         }
-                        else { }
+                        else
+                        {
+                            MessageBox.Show("Data gagal diubah!",
+                            "Kesalahan",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        }
                     }
                 }
             }
