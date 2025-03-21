@@ -195,6 +195,18 @@ namespace CRUDWindowsForm
             }
 
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.ClientSize = new System.Drawing.Size(908, 694);
+            this.Name = "Form1";
+            this.ResumeLayout(false);
+
+        }
     }
 
 }
