@@ -178,6 +178,8 @@ namespace CRUDWindowsForm
         private void BtnRefresh(object sender, EventArgs e) 
         {
             LoadData();
+            MessageBox.Show($"Jumlah Kolom: {dgvMahasiswa.ColumnCount}\n Jumlah Baris: {dgvMahasiswa.RowCount}",
+            "Debugging DataGridView", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 
